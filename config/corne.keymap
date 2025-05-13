@@ -59,19 +59,19 @@
 
         bluetooth_layer {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans      &to 0
-&trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans  &trans  &trans  &trans  &trans      &to 0
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans      &trans          &trans  &to 0
+&trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans  &trans  &trans      &trans          &trans  &to 0
                                     &to 0         &to 0         &to 0           &to 0   &to 0   &to 0
             >;
         };
 
         functional {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp K_PLAY_PAUSE  &kp K_PREVIOUS        &kp K_NEXT            &kp K_STOP  &trans  &trans
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp K_MUTE        &kp C_VOLUME_UP       &kp C_VOL_DN          &trans      &trans  &to 0
-&trans  &trans  &trans  &trans   &trans   &trans     &kp PRINTSCREEN   &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans      &trans  &to 0
-                        &to 0    &to 0    &to 0      &to 0             &to 0                 &to 0
+&kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6            &kp K_PLAY_PAUSE  &kp K_PREVIOUS        &kp K_NEXT            &kp K_STOP  &trans  &trans
+&kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12           &kp K_MUTE        &kp C_VOLUME_UP       &kp C_VOL_DN          &trans      &trans  &to 0
+&kp LC(LA(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))  &kp LA(LC(F6))    &kp PRINTSCREEN   &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans      &trans  &to 0
+                                                &to 0           &to 0           &to 0             &to 0             &to 0                 &to 0
             >;
         };
     };
