@@ -3,7 +3,7 @@
 https://zmk.dev/docs/user-setup
 
 - keyboard: corne
-- board: nice!nano v2
+- board: nice!nano v2 (`nice_nano//zmk`)
 
 ## Display config:
 
